@@ -1,6 +1,6 @@
 ---
 name: WebService-Google-Contact
-version: 0.000003
+version: 0.0.1
 author:
   - 'DAISUKE ABUI <abui@cpan.org>'
 abstract: Simple Interface for Google Contact API.
@@ -17,7 +17,7 @@ requires:
 provides:
   WebService::Google::Contact:
     file: lib/WebService/Google/Contact.pm
-    version: 0.000003
+    version: 0.0.1
 generated_by: Module::Build version 0.28
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

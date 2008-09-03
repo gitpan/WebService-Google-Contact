@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use Carp;
 
-use version; our $VERSION = qv('0.0.3');
+our $VERSION = '0.0.1';
 
 use base qw/Class::Accessor::Fast/;
 __PACKAGE__->mk_accessors(qw(email contacts));
@@ -105,7 +105,7 @@ WebService::Google::Contact - Simple Interface for Google Contact API.
 
 =head1 VERSION
 
-This document describes WebService::Google::Contact version 0.0.1
+Version 0.0.1
 
 =head1 SYNOPSIS
 
@@ -137,24 +137,39 @@ This document describes WebService::Google::Contact version 0.0.1
 
     warn sprintf('Welcome %s!', $email);
 
-=head1 DESCRIPTION
+=head1 FUNCTIONS
 
-=head2 Methods
-=over
-=item name_by_email
+=head2 new
+
+create WebService::Google::Contact constructor.
+
+=head2 name_by_email
+
 get user name from email address after verify stage.
-=item uri_to_login
-make the uri for google authorization.
-=item verify
-verify the token after google authorization.
-=item upgrade_to_session_token
-upgrade_to_session_token.
-=item get_email
-get email address.
-=item get_contact
-get contact list.
-=back
 
+=head2 uri_to_login($next, $scope)
+
+make the uri for google authorization.
+
+=head2 verify($token)
+
+verify the token after google authorization.
+
+=head2 get_contact
+
+get contact list.
+
+=head2 email
+
+get email address after verified stage.
+
+=head2 upgrade_to_session_token
+
+upgrade_to_session_token(private method).
+
+=head2 get_email
+
+get email address(private method).
 
 =head1 BUGS AND LIMITATIONS
 
