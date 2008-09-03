@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use Carp;
 
-our $VERSION = '0.0.1';
+our $VERSION = '0.1';
 
 use base qw/Class::Accessor::Fast/;
 __PACKAGE__->mk_accessors(qw(email contacts));
@@ -105,7 +105,7 @@ WebService::Google::Contact - Simple Interface for Google Contact API.
 
 =head1 VERSION
 
-Version 0.0.1
+Version 0.1
 
 =head1 SYNOPSIS
 
